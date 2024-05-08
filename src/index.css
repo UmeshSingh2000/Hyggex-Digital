@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+i{
+    cursor: pointer;
+    z-index: 1000;
+}
+.controls i{
+    font-size: 30px;
+}
+.question{
+    margin-top: 10px;
+    width: 75%;
+    border: 1px solid blue;
+    border-radius: 10px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    padding: 0px 20px;
+}
+.question i{
+    position: absolute;
+    right: 2%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.question h1{
+    font-weight: 500;
+    font-size: 20px;
+}
+.reveal{
+    animation: reveal .5s ;
+}
+@keyframes reveal {
+    0%{
+        transform: scaleX(100%);
+    }
+    50%{
+        transform: scaleX(0);
+        
+    }
+    100%{
+        transform: scaleX(100%);
+    }
+}
+.rev{
+    animation: rev .5s;
+
+}
+.card-body{
+    transition: all .3s;
+}
+@keyframes rev {
+    0%{
+        transform: scaleX(100%);
+    }
+    50%{
+        transform: scaleX(0);
+        
+    }
+    100%{
+        transform: scaleX(100%);
+    }
+}
+
+.expand{
+    scale: 200%;
+}
+.question{
+    transition: all .5s;
+}
+.answer{
+    height: 100px;
+}
+
+.card-switch ul li{
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
