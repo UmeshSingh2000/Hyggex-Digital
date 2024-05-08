@@ -6,7 +6,7 @@
 
 <h2>🚀 Demo</h2>
 
-[demo](demo)
+https://hyggex-digital-seven.vercel.app/
 
 <h2>🛠️ Installation Steps:</h2>
 
